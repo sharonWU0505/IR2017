@@ -1,1 +1,1 @@
-# IR2017
+# Introduction to Information Retrieval and Text Mining (2017, Fall)
