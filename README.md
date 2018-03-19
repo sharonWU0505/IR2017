@@ -1,1 +1,14 @@
-# Introduction to Information Retrieval and Text Mining (2017, Fall)
+# IRandTM
+### PA-1
+Preprocess documents
+
+### PA-2
+Generate terms
+Calculate cosine similarity between two documents
+
+### PA-3
+Feature selection for extracting important terms
+Classification of documents
+
+### PA-4
+Hierarchical clustering
