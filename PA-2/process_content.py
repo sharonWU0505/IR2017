@@ -36,7 +36,7 @@ def stem(tokens):
 def _remove_stopwords(terms):
     stopword_list = stopwords.words("english")
     stopword_list.append('')
-    stopword_list.extend(list(map(chr, range(97, 123))))  # alphebat letters
+    stopword_list.extend(list(map(chr, range(97, 123))))  # alphabet letters
 
     updated_terms = []
     for term in terms:

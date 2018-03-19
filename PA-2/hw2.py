@@ -2,12 +2,11 @@
 # -*- coding: utf-8 -*-
 import math
 import os
-from process_content import (
-    clear_content, stem, generate_term_list)
+from process_content import clear_content, stem, generate_term_list
 
 
 DOCUMENT_DIRECTORY = "documents/"
-DICTIONARY_FILEPATH = "dictionary.txt"
+DICTIONARY_PATH = "dictionary.txt"
 RESULT_DIRECTORY = "result/"
 
 
@@ -107,7 +106,7 @@ dictionary, terms_for_doc = generate_dictionary(
     term_list, processed_content)
 
 # Write dictionary.txt
-dict_file = open(DICTIONARY_FILEPATH, "w", encoding="utf-8")
+dict_file = open(DICTIONARY_PATH, "w", encoding="utf-8")
 for term_index, term in enumerate(dictionary):
     dict_file.write(
         '{id:<10}{term:<30}{df:<10}\n'.format(
