@@ -48,14 +48,14 @@ def process_document(content):
 
 # read file
 file = open("news.txt", "r", encoding="utf-8")
-content = file.read()
+file_content = file.read()
 file.close()
 
 # process document
-stemmed_terms = sorted(process_document(content))
+processed_terms = sorted(process_document(file_content))
 
 # write file
 output_file = open("result.txt", "w", encoding="utf-8")
-for stemmed_term in stemmed_terms:
-    output_file.write(stemmed_term + "\n")
+for term in processed_terms:
+    output_file.write(term + "\n")
 output_file.close()
